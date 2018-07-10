@@ -7,7 +7,10 @@
 
 
 ```
-LDADD += 
+LDADD += /usr/local/lib/libcrypto.so.1.1 \
+         /usr/local/lib/libssl.so.1.1 \
+         /usr/lib/x86_64-linux-gnu/libcrypto.so \
+         /usr/ib/x86_64-linux-gnu/libssl.so
 ```
 
 
