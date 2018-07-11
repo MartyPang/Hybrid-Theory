@@ -107,7 +107,7 @@ i386
 
 然后执行`go`
 
-![](/images/1.1.linux.png?raw=true)
+![](/images/1.1.linux.png)
 
 图1.2 Linux系统下安装成功之后执行go显示的信息
 
@@ -329,7 +329,7 @@ src/
 
 Go语言自带有一套完整的命令操作工具，你可以通过在命令行中执行`go`来查看它们：
 
-  ![](images/1.1.mac.png?raw=true)
+  ![](/images/1.1.mac.png)
 
 图1.3 Go命令显示详细的信息
 
@@ -677,7 +677,7 @@ vscode还有一项很强大的功能就是断点调试,结合[delve](https://git
 
 - 自动化提示代码,如下图所示
 
-  ![](images/1.4.sublime1.png?raw=true)
+  ![](/images/1.4.sublime1.png)
 
   图1.5 sublime自动化提示界面
 
@@ -685,7 +685,7 @@ vscode还有一项很强大的功能就是断点调试,结合[delve](https://git
 
   - 支持项目管理
 
-  ![](images/1.4.sublime2.png?raw=true)
+  ![](/images/1.4.sublime2.png)
 
   图1.6 sublime项目管理界面
 
@@ -712,7 +712,7 @@ vscode还有一项很强大的功能就是断点调试,结合[delve](https://git
 
    这个时候重启一下Sublime，可以发现在在菜单栏多了一个如下的栏目，说明Package Control已经安装成功了。
 
-  ![](images/1.4.sublime3.png?raw=true)
+  ![](/images/1.4.sublime3.png)
 
 ```
 图1.7 sublime包管理
@@ -724,7 +724,7 @@ vscode还有一项很强大的功能就是断点调试,结合[delve](https://git
 
    这个时候看左下角显示正在读取包数据，完成之后出现如下界面
 
-   ![](images/1.4.sublime4.png?raw=true)
+   ![](/images/1.4.sublime4.png)
 
    图1.8 sublime安装插件界面
 
