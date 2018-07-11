@@ -45,7 +45,7 @@ export PATH=$PATH:$HOME/go/bin:$GOPATH/bin
 
 当你设置完毕之后在命令行里面输入`go`，看到如下图片即说明你已经安装成功
 
-![](../images/1.1.mac.png?raw=true)
+![](/images/1.1.mac.png)
 
 图1.1 源码安装之后执行Go命令的图
 
@@ -107,7 +107,7 @@ i386
 
 然后执行`go`
 
-![](images/1.1.linux.png?raw=true)
+![](/images/1.1.linux.png?raw=true)
 
 图1.2 Linux系统下安装成功之后执行go显示的信息
 
