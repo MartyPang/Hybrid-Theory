@@ -19,6 +19,7 @@ int pkeyToChar(EVP_PKEY *pkey, char *cpkey)
   BIO_get_mem_data(outbio, char_pkey);
   strcpy(cpkey, static_cast<const char*>(char_pkey);
   
+  //free bio
   BIO_free_all(outbio);
   return 0;
 }
