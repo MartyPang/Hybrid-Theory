@@ -7,7 +7,7 @@
 直接上代码。
 
 ```c++
-int pkeyToChar(EVP_PKEY *pkey, const char *cpkey)
+int pkeyToChar(EVP_PKEY *pkey, char *cpkey)
 {
   char *char_pkey = new char[512];
   BIO *outbio = BIO\_new(BIO_s_mem());
@@ -34,7 +34,21 @@ int pkeyToChar(EVP_PKEY *pkey, const char *cpkey)
 ```
 int charToPkey(char *cpkey, EVP_PKEY *pkey)
 {
+  BIO *bio = NULL;
   
+  if(NULL == (bio = BIO_new_mem_buf(cpkey, -1)))
+  {
+    cout<<"BIO new mem buf error."<<endl;
+  }
+  else if(NULL == (pkey = PEM_read_bio_PUBKEY(bio, NULL, NULL, NULL)))
+  {
+    ERR_load_crypto_strings();
+    char errBuf[512];
+    ERR_error_string_n(ERR_get_error(), errBuf, sizeof(errBuf));
+    cout<< "load public key failed["<<errBuf<<"]"<<endl;
+  }
+  BIO_free_all(bio);
+  return 0;
 }
 ```
 
