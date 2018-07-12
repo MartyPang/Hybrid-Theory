@@ -7,7 +7,7 @@
 直接上代码。
 
 ```c++
-int pkeyToChar(EVP_PKEY *pkey, char *cpkey)
+int pkeyToChar(EVP_PKEY *pkey, const char *cpkey)
 {
   char *char_pkey = new char[512];
   BIO *outbio = BIO\_new(BIO_s_mem());
