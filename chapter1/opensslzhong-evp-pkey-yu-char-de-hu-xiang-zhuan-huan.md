@@ -16,7 +16,10 @@ int pkeyToChar(EVP_PKEY *pkey, char *cpkey)
   if(!PEM\_write\_bio\_PUBKEY(outbio, pkey))
     BIO_printf(outbio, "Error writing public key data in PEM format");
   
+  BIO_get_mem_data(outbio, char_pkey);
+  strcpy(cpkey, static_cast<const char*>(char_pkey);
   
+  return 0;
 }
 
 
