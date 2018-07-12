@@ -24,7 +24,5 @@ int pkeyToChar(EVP_PKEY *pkey, char *cpkey)
   BIO_free_all(outbio);
   return 0;
 }
-
-
 ```
 
