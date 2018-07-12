@@ -7,10 +7,10 @@
 直接上代码。
 
 ```c++
-int pkeyToChar(EVP\_PKEY \*pkey, char \*cpkey)
+int pkeyToChar(EVP_PKEY *pkey, char *cpkey)
 {
   char *char_pkey = new char[512];
-  BIO *outbio = BIO\_new(BIO\_s\_mem());
+  BIO *outbio = BIO\_new(BIO_s_mem());
 
   //write pubkey to BIO in PEM format
   if(!PEM\_write\_bio\_PUBKEY(outbio, pkey))
@@ -32,7 +32,7 @@ int pkeyToChar(EVP\_PKEY \*pkey, char \*cpkey)
 
 
 ```
-int charToPkey(char \*cpkey, EVP\_PKEY \*pkey)
+int charToPkey(char *cpkey, EVP_PKEY *pkey)
 ```
 
 
