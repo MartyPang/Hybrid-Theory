@@ -33,6 +33,9 @@ int pkeyToChar(EVP_PKEY *pkey, char *cpkey)
 
 ```
 int charToPkey(char *cpkey, EVP_PKEY *pkey)
+{
+  
+}
 ```
 
 
